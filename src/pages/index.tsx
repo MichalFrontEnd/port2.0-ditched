@@ -13,11 +13,56 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div>
-          <div>
-            <img src="/mfront.jpg" alt="Michal Front" />
+        <section className="header container" id="header">
+          <div className="header__container">
+            <h1 className="header__header">Michal Front</h1>
+            <h2 className="header__sub-header">Front End Developer</h2>
+            <div className="header__image">
+              <img
+                src="/mfront.jpg"
+                alt="Michal Front"
+                className="header__image-image"
+              />
+            </div>
           </div>
-        </div>
+        </section>
+        <section className="about container" id="about">
+          <div className="about__container">
+            <div className="about__image">
+              <img
+                src="/mfront.jpg"
+                alt="Michal Front"
+                className="about__image-image"
+              />
+            </div>
+            <div className="about__info">
+              <h2 className="about__header">This is Me</h2>
+              <p className="about__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                quos placeat harum dicta consequatur dolor, ex omnis et nihil
+                ducimus molestiae autem fugiat iure molestias similique
+                doloremque vitae quidem nisi?
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="projects container" id="projects">
+          <div className="projects__container projects__container--pro">
+            <h2 className="projects__header">Projects</h2>
+            <h2 className="projects__sub-header">Proffesional</h2>
+            <div className="projects__slider">Slider placeholder</div>
+          </div>
+          <div className="projects__container projects__container--private">
+            <h2 className="projects__sub-header">Private</h2>
+            <div className="projects__slider">Slider placeholder</div>
+          </div>
+        </section>
+        <section className="Contact container" id="Contact">
+          <div className="Contact__container">
+            <h2 className="Contact__header">Contact</h2>
+            <div className="Contact__icons">Icons placeholder</div>
+          </div>
+        </section>
       </main>
     </>
   );
