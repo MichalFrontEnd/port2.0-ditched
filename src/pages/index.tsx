@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-
-// const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/organisms";
 
 export default function Home() {
   return (
@@ -13,24 +12,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <section className="header container" id="header">
+        {/* <section className="header container" id="header">
           <div className="header__container">
             <h1 className="header__header">Michal Front</h1>
             <h2 className="header__sub-header">Front End Developer</h2>
             <div className="header__image">
               <img
-                src="/mfront.jpg"
+                src="/mfront.png"
                 alt="Michal Front"
                 className="header__image-image"
               />
             </div>
           </div>
-        </section>
+        </section> */}
+        <Header />
+        <nav className="navbar">
+          <div className="navbar__item">About</div>
+          <div className="navbar__item">Projects</div>
+          <div className="navbar__item">Contact</div>
+        </nav>
         <section className="about container" id="about">
           <div className="about__container">
             <div className="about__image">
               <img
-                src="/mfront.jpg"
+                src="/mfront.png"
                 alt="Michal Front"
                 className="about__image-image"
               />
