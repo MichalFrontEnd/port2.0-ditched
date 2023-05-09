@@ -1,0 +1,11 @@
+@use "./header.vars.scss";
+
+.header {
+  &__container {
+    background-color: var(--text);
+  }
+  &__header {
+    color: blue;
+    font-size: rem(50);
+  }
+}

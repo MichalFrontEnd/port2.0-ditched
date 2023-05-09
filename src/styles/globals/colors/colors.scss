@@ -1,0 +1,17 @@
+$colors: (
+  primary: #085868,
+  primary-darker: hsl(190, 86%, 17%),
+  secondary: #0ac9a6,
+
+  text: #0c0c0c,
+  light: #e5e5e5,
+  lead: #c7c7c7,
+  paper: #fff,
+  aluminium: #d9d9d9,
+) !default;
+
+:root {
+  @each $color, $value in $colors {
+    --#{$color}: #{$value};
+  }
+}

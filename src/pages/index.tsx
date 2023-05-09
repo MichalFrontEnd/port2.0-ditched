@@ -12,26 +12,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <section className="header container" id="header">
-          <div className="header__container">
-            <h1 className="header__header">Michal Front</h1>
-            <h2 className="header__sub-header">Front End Developer</h2>
-            <div className="header__image">
-              <img
-                src="/mfront.png"
-                alt="Michal Front"
-                className="header__image-image"
-              />
-            </div>
-          </div>
-        </section> */}
         <Header />
-        <nav className="navbar">
+        <nav className="navbar container">
           <div className="navbar__item">About</div>
           <div className="navbar__item">Projects</div>
           <div className="navbar__item">Contact</div>
         </nav>
-        <section className="about container" id="about">
+        <section className="about container container--light" id="about">
           <div className="about__container">
             <div className="about__image">
               <img
@@ -51,18 +38,21 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="projects container" id="projects">
+        <section
+          className="projects container container--reverse"
+          id="projects"
+        >
           <div className="projects__container projects__container--pro">
             <h2 className="projects__header">Projects</h2>
             <h2 className="projects__sub-header">Proffesional</h2>
             <div className="projects__slider">Slider placeholder</div>
           </div>
-          <div className="projects__container projects__container--private">
+          <div className="projects__container container--light projects__container--private">
             <h2 className="projects__sub-header">Private</h2>
             <div className="projects__slider">Slider placeholder</div>
           </div>
         </section>
-        <section className="Contact container" id="Contact">
+        <section className="Contact container container--reverse" id="Contact">
           <div className="Contact__container">
             <h2 className="Contact__header">Contact</h2>
             <div className="Contact__icons">Icons placeholder</div>
