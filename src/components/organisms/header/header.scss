@@ -1,11 +1,57 @@
 @use "./header.vars.scss";
+@use "../../../styles/globals" as *;
 
 .header {
   &__container {
     background-color: var(--text);
+    height: 100vh;
+    // display: grid;
+    // grid-template-columns: 30% 70%;
+    // grid-template-rows: 70% 30%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    background-size: cover;
   }
-  &__header {
-    color: blue;
-    font-size: rem(50);
+  &__heading,
+  &__sub-heading {
+    color: var(--paper);
+    grid-row: 2;
+    z-index: 1;
+    grid-column: 1 / 2;
+  }
+
+  &__heading {
+    grid-row: 1;
+    align-self: end;
+  }
+  &__sub-heading {
+    color: var(--paper);
+    grid-row: 2;
+  }
+  &__image {
+    // border: 2px lawngreen solid;
+    grid-column: 1/ 2;
+    grid-row: 1 / 3;
+    align-self: end;
+    width: auto;
+    height: 70%;
+    position: relative;
+    isolation: isolate;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: black;
+      opacity: 0.2;
+    }
+    &-image {
+      // border: 2px yellow solid;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 75%;
+    }
   }
 }

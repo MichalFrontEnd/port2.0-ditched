@@ -52,6 +52,12 @@ export default function Home() {
             <div className="projects__slider">Slider placeholder</div>
           </div>
         </section>
+        <section className="projects container container--reverse">
+          <div className="projects__container container--light projects__container--private">
+            <h2 className="projects__sub-header">Private</h2>
+            <div className="projects__slider">Slider placeholder</div>
+          </div>
+        </section>
         <section className="Contact container container--reverse" id="Contact">
           <div className="Contact__container">
             <h2 className="Contact__header">Contact</h2>
