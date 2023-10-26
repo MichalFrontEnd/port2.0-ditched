@@ -1,13 +1,12 @@
 import * as React from "react";
 import Image from "next/image";
-import { relative } from "path";
 
 export function Header() {
   return (
-    <section className="header" id="header">
+    <div className="header" id="header">
       <div className="header__container">
-        <h1 className="header__heading">Michal Front</h1>
-        <h2 className="header__sub-heading">Front End Developer</h2>
+        <h1 className="header__heading container">Michal Front</h1>
+        <h2 className="header__sub-heading container">Front End Developer</h2>
         <div className="header__image">
           <Image
             src="/mfront.png"
@@ -17,7 +16,7 @@ export function Header() {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
