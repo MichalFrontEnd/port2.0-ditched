@@ -23,7 +23,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/organisms/header/Header.tsx"
+    "src/components/organisms/header/Header.tsx",
+    "src/components/organisms/header/index.ts"
   ],
   "exclude": ["node_modules"]
 }
